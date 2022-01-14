@@ -27,8 +27,9 @@ function BookmarkNewForm() {
     event.preventDefault();
     axios.post(`${API_URL}/bookmarks`)
     .then((res)=> {
+      console.log(res);
       navigate("/bookmarks");
-    })
+    });
   };
   return (
     <div className="New">
